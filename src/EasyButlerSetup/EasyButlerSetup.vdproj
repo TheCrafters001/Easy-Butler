@@ -16,6 +16,12 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_13476D3C3E064ED6B8163F289BA4F943"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1BDE95D78DAA1DB20382F0A7A15BD7B8"
         "OwnerKey" = "8:_CE191407C4E94D2997379A084F201FA3"
         "MsmSig" = "8:_UNDEFINED"
@@ -23,7 +29,7 @@
         "Entry"
         {
         "MsmKey" = "8:_1BDE95D78DAA1DB20382F0A7A15BD7B8"
-        "OwnerKey" = "8:_CCD19EAA973D410E917182BFBFC378C3"
+        "OwnerKey" = "8:_7400EAFA96E3419681E7BE7AAFCF1309"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -35,7 +41,7 @@
         "Entry"
         {
         "MsmKey" = "8:_1BDE95D78DAA1DB20382F0A7A15BD7B8"
-        "OwnerKey" = "8:_7400EAFA96E3419681E7BE7AAFCF1309"
+        "OwnerKey" = "8:_CCD19EAA973D410E917182BFBFC378C3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -53,6 +59,18 @@
         "Entry"
         {
         "MsmKey" = "8:_7E3D22C360C5404A8D81ABA4B4D8BF68"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8BCD76C950714776BECCC55735DC9627"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9338F0F64BDC47EDA7F42030A7E956D8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -167,6 +185,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_13476D3C3E064ED6B8163F289BA4F943"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\DEV\\Easy Butler\\X86\\butler.exe"
+            "TargetName" = "8:butler.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1BDE95D78DAA1DB20382F0A7A15BD7B8"
             {
             "AssemblyRegister" = "3:1"
@@ -238,6 +276,46 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8BCD76C950714776BECCC55735DC9627"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\DEV\\Easy Butler\\X86\\c7zip.dll"
+            "TargetName" = "8:c7zip.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9338F0F64BDC47EDA7F42030A7E956D8"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\DEV\\Easy Butler\\X86\\7z.dll"
+            "TargetName" = "8:7z.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -276,6 +354,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_0C63F3C7502D48E99CCEA80B8F20DC57"
+                    {
+                    "Name" = "8:Itch.IO Tools"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_91DE57993E5C4B26914331F2B2F6BCF3"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -295,7 +384,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Easy Butler"
         "ProductCode" = "8:{5EA3D76B-3FF7-4D6C-91C7-FC535EE2BFB5}"
-        "PackageCode" = "8:{85244395-6FEE-455F-93C5-2CADAA318378}"
+        "PackageCode" = "8:{C8A62C53-0A9F-4279-9BF3-2D0E6D914851}"
         "UpgradeCode" = "8:{CC89C62F-C321-4793-8AE8-4CF02D9C6F26}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -415,6 +504,48 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C45A7587909B49DBBDFC83E571331B95"
+            {
+            "Name" = "8:Update Butler (Easy Butler)"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_7400EAFA96E3419681E7BE7AAFCF1309"
+            "Folder" = "8:_0C63F3C7502D48E99CCEA80B8F20DC57"
+            "WorkingFolder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Icon" = "8:"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F9DBEBB5F1B5421A9B6D4FFFEAF4DAF7"
+            {
+            "Name" = "8:Easy Butler"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_CE191407C4E94D2997379A084F201FA3"
+            "Folder" = "8:_BF57E934BE16476B980B701C8AB13741"
+            "WorkingFolder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Icon" = "8:_CE191407C4E94D2997379A084F201FA3"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_FB075868271847B7A51C768D5CF9FBD0"
+            {
+            "Name" = "8:Easy Butler"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:32512"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_CE191407C4E94D2997379A084F201FA3"
+            "Folder" = "8:_0C63F3C7502D48E99CCEA80B8F20DC57"
+            "WorkingFolder" = "8:_CCF424635F1342F499E888E1A1B9D4D1"
+            "Icon" = "8:_CE191407C4E94D2997379A084F201FA3"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
