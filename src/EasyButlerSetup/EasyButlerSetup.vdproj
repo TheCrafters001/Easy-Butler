@@ -183,7 +183,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.6.1"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.5.2"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=671728"
                 }
@@ -410,7 +410,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Easy Butler"
         "ProductCode" = "8:{5EA3D76B-3FF7-4D6C-91C7-FC535EE2BFB5}"
-        "PackageCode" = "8:{4E0B1215-45CE-49C4-817C-2B074842960E}"
+        "PackageCode" = "8:{952E2A55-EE8D-4E65-95FB-097D1220CC07}"
         "UpgradeCode" = "8:{CC89C62F-C321-4793-8AE8-4CF02D9C6F26}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
