@@ -11,6 +11,10 @@ With Easy Butler, you can update, and publish your games with ease. When you use
 Hope you enjoy using Easy Butler!
 
 -------
+
+Think someone is violating [Code of Conduct](https://github.com/TheCrafters001/Easy-Butler/blob/master/CODE_OF_CONDUCT.md)? Click [here](http://thecrafters001.ga/r/abuse) to report it.
+
+-------
 This project was made possible by:
 
 [![](https://badgen.net/badge/GitHub/TheCrafters001/green?icon=github)](https://github.com/TheCrafters001?tab=repositories) [![](https://badgen.net/badge/license/GNU%20GPL%20V3/orange)](https://www.gnu.org/licenses/)
