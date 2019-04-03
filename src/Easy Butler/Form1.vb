@@ -35,36 +35,42 @@
         Folder.Text = FolderBrowserDialog1.SelectedPath()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         Username.Text = ""
         Version.Text = ""
         GameURL.Text = ""
         Folder.Text = ""
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
         Dim pHelp As New ProcessStartInfo
         pHelp.FileName = "butler.exe"
-        pHelp.Arguments = "push " + Folder.Text + " " + Username.Text + "/" + GameURL.Text + ":win --userversion " + Version.Text
+        pHelp.Arguments = "push """ + Folder.Text + """ " + Username.Text + "/" + GameURL.Text + ":win --userversion " + Version.Text
         pHelp.UseShellExecute = True
         pHelp.WindowStyle = ProcessWindowStyle.Normal
         Dim proc As Process = Process.Start(pHelp)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim pHelp As New ProcessStartInfo
-        pHelp.FileName = "butler.exe"
-        pHelp.Arguments = "login"
-        pHelp.UseShellExecute = True
-        pHelp.WindowStyle = ProcessWindowStyle.Normal
-        Dim proc As Process = Process.Start(pHelp)
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim SourcePathLogin As String = "login.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
+        Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathLogin) 'get the filename of the original file without the directory on it
+        If System.IO.File.Exists(SourcePathLogin) Then
+            Dim pHelp As New ProcessStartInfo
+            pHelp.FileName = "login.exe"
+            pHelp.Arguments = ""
+            pHelp.UseShellExecute = True
+            pHelp.WindowStyle = ProcessWindowStyle.Normal
+            Dim proc As Process = Process.Start(pHelp)
+        Else
+            MessageBox.Show("You seem to be missing login.exe. You cannot login to butler.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Dim SourcePathUpdateButler As String = "Update Butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
         Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
         If System.IO.File.Exists(SourcePathUpdateButler) Then
@@ -72,7 +78,7 @@
             pHelp.FileName = "Update Butler.exe"
             pHelp.Arguments = ""
             pHelp.UseShellExecute = True
-            pHelp.WindowStyle = ProcessWindowStyle.Normal
+            pHelp.WindowStyle = ProcessWindowStyle.Hidden
             Dim proc As Process = Process.Start(pHelp)
         Else
             MessageBox.Show("You seem to be missing Update Butler.exe. You can still work in the app, you cannot update Butler however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -80,13 +86,22 @@
 
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim pHelp As New ProcessStartInfo
-        pHelp.FileName = "butler.exe"
-        pHelp.Arguments = "logout"
-        pHelp.UseShellExecute = True
-        pHelp.WindowStyle = ProcessWindowStyle.Normal
-        Dim proc As Process = Process.Start(pHelp)
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+        Dim SourcePathLogout As String = "logout.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
+        Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathLogout) 'get the filename of the original file without the directory on it
+        If System.IO.File.Exists(SourcePathLogout) Then
+            Dim pHelp As New ProcessStartInfo
+            pHelp.FileName = "logout.exe"
+            pHelp.Arguments = ""
+            pHelp.UseShellExecute = True
+            pHelp.WindowStyle = ProcessWindowStyle.Hidden
+            Dim proc As Process = Process.Start(pHelp)
+            MsgBox("You have been logged out!")
+        Else
+            MessageBox.Show("You seem to be missing logout.exe. You cannot logout of butler.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+
+
     End Sub
 
     Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click

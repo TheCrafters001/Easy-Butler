@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Easy Butler")>
-<Assembly: AssemblyDescription("Easy Butler, Updating your game just easier!")>
+<Assembly: AssemblyDescription("Easy Butler, Updating your game just easier! Looking for the beta? Go to the following link: https://github.com/TheCrafters001/Easy-Butler")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("Easy Butler")>
 <Assembly: AssemblyCopyright("Copyright © TheCrafters001 2019")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("3.0.1.0")>
-<Assembly: AssemblyFileVersion("3.0.1.0")>
+<Assembly: AssemblyVersion("3.0.2.0")>
+<Assembly: AssemblyFileVersion("3.0.2.0")>
