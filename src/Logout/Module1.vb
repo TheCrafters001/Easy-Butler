@@ -11,6 +11,7 @@
             pHelp.UseShellExecute = True
             pHelp.WindowStyle = ProcessWindowStyle.Normal
             Dim proc As Process = Process.Start(pHelp)
+            MsgBox("Logged out!")
         Else
             Console.WriteLine("Error: Butler.exe is missing, cannot preform update. (0x1)")
             Console.Write("Press any key to continue . . . ")

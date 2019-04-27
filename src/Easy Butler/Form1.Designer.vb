@@ -31,7 +31,6 @@ Partial Class Form1
         Me.GameURL = New System.Windows.Forms.TextBox()
         Me.Folder = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.Version = New System.Windows.Forms.TextBox()
@@ -51,14 +50,19 @@ Partial Class Form1
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LicenseToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.OS_Select = New System.Windows.Forms.ComboBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -119,17 +123,6 @@ Partial Class Form1
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Folder"
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.SystemColors.Control
-        Me.Button4.ForeColor = System.Drawing.Color.Black
-        Me.Button4.Location = New System.Drawing.Point(223, 140)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(26, 23)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "..."
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'FolderBrowserDialog1
         '
         Me.FolderBrowserDialog1.Description = "Select the folder your game is located."
@@ -170,18 +163,18 @@ Partial Class Form1
         'SelectFolderToolStripMenuItem
         '
         Me.SelectFolderToolStripMenuItem.Name = "SelectFolderToolStripMenuItem"
-        Me.SelectFolderToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.SelectFolderToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.SelectFolderToolStripMenuItem.Text = "Select Folder"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(138, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ButlerToolStripMenuItem
@@ -246,15 +239,15 @@ Partial Class Form1
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "OS"
         '
-        'ComboBox1
+        'OS_Select
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Windows", "Mac", "Linux"})
-        Me.ComboBox1.Location = New System.Drawing.Point(40, 166)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox1.TabIndex = 18
+        Me.OS_Select.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.OS_Select.FormattingEnabled = True
+        Me.OS_Select.Items.AddRange(New Object() {"windows", "linux", "mac", "android"})
+        Me.OS_Select.Location = New System.Drawing.Point(40, 166)
+        Me.OS_Select.Name = "OS_Select"
+        Me.OS_Select.Size = New System.Drawing.Size(209, 21)
+        Me.OS_Select.TabIndex = 18
         '
         'Button5
         '
@@ -310,14 +303,59 @@ Partial Class Form1
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label7
+        'Button8
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(255, 169)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(77, 13)
-        Me.Label7.TabIndex = 25
-        Me.Label7.Text = "* NOT READY"
+        Me.Button8.Location = New System.Drawing.Point(249, 87)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(84, 23)
+        Me.Button8.TabIndex = 26
+        Me.Button8.Text = "What's This?"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(249, 112)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(84, 23)
+        Me.Button9.TabIndex = 27
+        Me.Button9.Text = "What's This?"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(249, 138)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(84, 23)
+        Me.Button10.TabIndex = 28
+        Me.Button10.Text = "What's This?"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(250, 164)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(84, 23)
+        Me.Button11.TabIndex = 29
+        Me.Button11.Text = "What's This?"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(250, 191)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(84, 23)
+        Me.Button12.TabIndex = 30
+        Me.Button12.Text = "What's This?"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(223, 138)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(26, 23)
+        Me.Button4.TabIndex = 31
+        Me.Button4.Text = "..."
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -325,18 +363,21 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(330, 261)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.OS_Select)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Version)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Folder)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GameURL)
@@ -345,6 +386,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Username)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Controls.Add(Me.Button11)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -366,7 +408,6 @@ Partial Class Form1
     Friend WithEvents GameURL As TextBox
     Friend WithEvents Folder As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Button4 As Button
     Friend WithEvents Timer1 As Timer
     Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
     Friend WithEvents Version As TextBox
@@ -386,12 +427,17 @@ Partial Class Form1
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LicenseToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents OS_Select As ComboBox
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label7 As Label
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
+    Friend WithEvents Button4 As Button
 End Class
