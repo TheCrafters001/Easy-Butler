@@ -5,7 +5,7 @@ Easy Butler; updating your games just got easier!
 
 ![Butler Logo](https://raw.githubusercontent.com/TheCrafters001/Easy-Butler/master/Butler-Logo.png)
 
-## Easy Butler; updating yoru games just got easier!
+## Easy Butler; updating your games just got easier!
 With Easy Butler, you can update, and publish your games with ease. When you use Easy Butler, it pushes a .ZIP file to your game page, with the version you have pushed. While Easy Butler relies on Butler to be installed, Easy Butler can automaticly update all the information! If Butler has an update, you can click "Update" on the application, and it will automaticly launch an updater, which elevates permissions, then launches butler with said eleivated permissions, then updates it! Easy huh? Course it is. This basicly adds a GUI to butler, the right way! Currently, Easy Butler only has Windows Support, but soon it will support Linux and Mac. :)
 
 Hope you enjoy using Easy Butler!
