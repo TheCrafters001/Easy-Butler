@@ -49,6 +49,7 @@ Partial Class Form1
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LicenseToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.OS_Select = New System.Windows.Forms.ComboBox()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -146,7 +147,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ButlerToolStripMenuItem, Me.AboutToolStripMenuItem, Me.LicenseToolStripMenuItem1})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.ButlerToolStripMenuItem, Me.AboutToolStripMenuItem, Me.LicenseToolStripMenuItem1, Me.SettingsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(330, 24)
@@ -163,18 +164,18 @@ Partial Class Form1
         'SelectFolderToolStripMenuItem
         '
         Me.SelectFolderToolStripMenuItem.Name = "SelectFolderToolStripMenuItem"
-        Me.SelectFolderToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SelectFolderToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.SelectFolderToolStripMenuItem.Text = "Select Folder"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(138, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(141, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ButlerToolStripMenuItem
@@ -229,6 +230,12 @@ Partial Class Form1
         Me.LicenseToolStripMenuItem1.Name = "LicenseToolStripMenuItem1"
         Me.LicenseToolStripMenuItem1.Size = New System.Drawing.Size(58, 20)
         Me.LicenseToolStripMenuItem1.Text = "License"
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'Label6
         '
@@ -394,7 +401,7 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Easy Butler V3.0"
+        Me.Text = "Easy Butler V3.1-BETA"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -440,4 +447,5 @@ Partial Class Form1
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
 End Class
