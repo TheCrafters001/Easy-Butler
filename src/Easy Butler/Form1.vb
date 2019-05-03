@@ -28,6 +28,23 @@
         Else
             MessageBox.Show("You seem to be missing c7zip.dll. You can still work in the app, you cannot update Butler however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+        If My.Settings.DarkTheme = False Then
+
+        ElseIf My.Settings.DarkTheme = True Then
+            Me.BackColor = Color.DimGray
+            Me.ForeColor = Color.White
+            Button1.BackColor = Color.DimGray
+            Button2.BackColor = Color.DimGray
+            Button3.BackColor = Color.DimGray
+            Button7.BackColor = Color.DimGray
+            Button6.BackColor = Color.DimGray
+            Button5.BackColor = Color.DimGray
+            Button8.BackColor = Color.DimGray
+            Button9.BackColor = Color.DimGray
+            Button10.BackColor = Color.DimGray
+            Button11.BackColor = Color.DimGray
+            Button12.BackColor = Color.DimGray
+        End If
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -196,5 +213,9 @@
         Else
             MessageBox.Show("You seem to be missing logout.exe. You cannot logout of butler.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+    End Sub
+
+    Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
+        Settings.Show()
     End Sub
 End Class
