@@ -9,7 +9,6 @@ Easy Butler; updating your games just got easier!
 [![Build status](https://ci.appveyor.com/api/projects/status/jcq57w87weea18gp?svg=true)](https://ci.appveyor.com/project/TheCrafters001/easy-butler)
 ![Release Version](https://badgen.net/github/release/TheCrafters001/Easy-Butler)
 ![Stable Release Version](https://badgen.net/github/release/TheCrafters001/Easy-Butler/stable)
-![Contributers](https://badgen.net/github/contributors/TheCrafters001/Easy-Butler)
 ![Open Issues](https://img.shields.io/github/issues/TheCrafters001/Easy-Butler.svg)
 ![Stars](https://img.shields.io/github/stars/TheCrafters001/Easy-Butler.svg)
 ![Forks](https://img.shields.io/github/forks/TheCrafters001/Easy-Butler.svg)
