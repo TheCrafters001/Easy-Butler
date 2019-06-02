@@ -1,4 +1,6 @@
-﻿Public Class page5
+﻿Imports System.ComponentModel
+
+Public Class page5
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
             MessageBox.Show("Please put your Itch.IO URL (http://" + My.Settings.UserName + ".itch.io/(gameURL)) in the text box.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -22,4 +24,5 @@
             Me.Close()
         End If
     End Sub
+
 End Class

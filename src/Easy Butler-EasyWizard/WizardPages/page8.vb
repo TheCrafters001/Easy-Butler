@@ -1,4 +1,6 @@
-﻿Public Class page8
+﻿Imports System.ComponentModel
+
+Public Class page8
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
             MessageBox.Show("Please put your (compiled) game folder in the text box.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -22,4 +24,5 @@
             Me.Close()
         End If
     End Sub
+
 End Class

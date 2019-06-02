@@ -1,4 +1,6 @@
-﻿Public Class page3
+﻿Imports System.ComponentModel
+
+Public Class page3
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim SourcePathUpdateButler As String = "Update Butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
         Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
@@ -16,7 +18,7 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        page4.show()
+        page4.Show()
         Me.Close()
     End Sub
 
@@ -32,4 +34,9 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub Page3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
 End Class

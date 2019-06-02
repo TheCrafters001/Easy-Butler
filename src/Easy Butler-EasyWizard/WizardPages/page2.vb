@@ -1,4 +1,6 @@
-﻿Public Class page2
+﻿Imports System.ComponentModel
+
+Public Class page2
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim result As DialogResult = MessageBox.Show("Do you want to exit the wizard now? Your changes will not be saved.", "Exit now?", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
         If result = DialogResult.Yes Then
@@ -28,4 +30,5 @@
         page3.Show()
         Me.Close()
     End Sub
+
 End Class

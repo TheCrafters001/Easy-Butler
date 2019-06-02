@@ -1,6 +1,7 @@
 ﻿Public Class page9
     Private Sub Page9_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Start()
+        Timer2.Start()
     End Sub
 
     Private Const CP_NOCLOSE_BUTTON As Integer = &H200
@@ -55,7 +56,7 @@
                 end_failed.Show()
                 Me.Close()
             Else
-                Timer2.Start()
+
                 Label4.Text = "Gathering required update information..."
                 Timer1.Stop()
             End If
@@ -64,8 +65,8 @@
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         ProgressBar2.Increment(5)
-        If ProgressBar1.Value = 100 Then
-            page10.show()
+        If ProgressBar2.Value = 100 Then
+            page10.Show()
             Me.Close()
         End If
     End Sub

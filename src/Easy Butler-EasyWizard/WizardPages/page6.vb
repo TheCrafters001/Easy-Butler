@@ -1,7 +1,5 @@
 ﻿Public Class page6
-    Private Sub Page6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         page5.Show()
@@ -10,9 +8,9 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If OS_Select.Text = "" Then
-            MessageBox.Show("Please put your Itch.IO URL (http://" + My.Settings.UserName + ".itch.io/(gameURL)) in the text box.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Please select an operating system.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
-            My.Settings.GameURL = OS_Select.Text
+            My.Settings.OSVer = OS_Select.Text
             My.Settings.Save()
             page7.Show()
             Me.Close()

@@ -22,6 +22,7 @@ Partial Class finished
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(finished))
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -36,11 +37,9 @@ Partial Class finished
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(171, 38)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(331, 91)
+        Me.Label4.Size = New System.Drawing.Size(331, 117)
         Me.Label4.TabIndex = 25
-        Me.Label4.Text = "Your game on your Itch.IO page should be updated in a few minutes." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The wizard " &
-    "is now completed, you may exit!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "--Credits--" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Wizard Design: TheCrafters001" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "W" &
-    "izard Images: Inno Setup"
+        Me.Label4.Text = resources.GetString("Label4.Text")
         '
         'Label3
         '

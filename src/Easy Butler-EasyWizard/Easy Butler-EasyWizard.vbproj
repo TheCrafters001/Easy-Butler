@@ -101,6 +101,12 @@
     <Compile Include="WizardPages\finished.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WizardPages\hidden_info.Designer.vb">
+      <DependentUpon>hidden_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WizardPages\hidden_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WizardPages\page10.Designer.vb">
       <DependentUpon>page10.vb</DependentUpon>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WizardPages\finished.resx">
       <DependentUpon>finished.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WizardPages\hidden_info.resx">
+      <DependentUpon>hidden_info.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WizardPages\page10.resx">
       <DependentUpon>page10.vb</DependentUpon>

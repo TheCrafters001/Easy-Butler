@@ -1,11 +1,13 @@
-﻿Public Class page4
+﻿Imports System.ComponentModel
+
+Public Class page4
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
             MessageBox.Show("Please put your Itch.IO username in the text box.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
         Else
             My.Settings.UserName = TextBox1.Text
             My.Settings.Save()
-            page5.show()
+            page5.Show()
             Me.Close()
         End If
     End Sub
@@ -22,4 +24,6 @@
             Me.Close()
         End If
     End Sub
+
+
 End Class

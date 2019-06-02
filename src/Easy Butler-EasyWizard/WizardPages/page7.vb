@@ -1,4 +1,6 @@
-﻿Public Class page7
+﻿Imports System.ComponentModel
+
+Public Class page7
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text = "" Then
             MessageBox.Show("Please put your new game version in the text box.", "No User Input...", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -22,4 +24,9 @@
             Me.Close()
         End If
     End Sub
+
+    Private Sub Page7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
 End Class

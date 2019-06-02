@@ -117,15 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Your game on your Itch.IO page should be updated in a few minutes.
-
-IF YOU SEE A CONSOLE WINDOW, DO NOT CLOSE IT
-
-The wizard is now completed, you may exit!
-
---Credits--
-Wizard Design: TheCrafters001
-Wizard Images: Inno Setup</value>
-  </data>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
