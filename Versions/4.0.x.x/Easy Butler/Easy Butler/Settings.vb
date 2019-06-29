@@ -85,4 +85,8 @@
         Else
         End If
     End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Process.Start("https://forms.gle/97QpsyUUTFNPNJ7z8")
+    End Sub
 End Class
