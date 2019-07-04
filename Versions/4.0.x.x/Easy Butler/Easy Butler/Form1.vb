@@ -1,35 +1,5 @@
 ﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-        Dim SourcePathButler As String = "butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
-        Dim FilenameButler As String = System.IO.Path.GetFileName(SourcePathButler) 'get the filename of the original file without the directory on it
-        If System.IO.File.Exists(SourcePathButler) Then
-
-        Else
-            MessageBox.Show("You seem to be missing butler.exe. You can still work in the app, you cannot update your games however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-        Dim SourcePathUpdateButler As String = "Update Butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
-        Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
-        If System.IO.File.Exists(SourcePathUpdateButler) Then
-
-        Else
-            MessageBox.Show("You seem to be missing Update Butler.exe. You can still work in the app, you cannot update Butler however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-        Dim SourcePath7zip As String = "7z.dll" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
-        Dim Filename7zip As String = System.IO.Path.GetFileName(SourcePath7zip) 'get the filename of the original file without the directory on it
-        If System.IO.File.Exists(SourcePath7zip) Then
-
-        Else
-            MessageBox.Show("You seem to be missing 7z.dll. You can still work in the app, you cannot update Butler however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-        Dim SourcePathc7 As String = "c7zip.dll" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
-        Dim Filename As String = System.IO.Path.GetFileName(SourcePathc7) 'get the filename of the original file without the directory on it
-        If System.IO.File.Exists(SourcePathc7) Then
-
-        Else
-            MessageBox.Show("You seem to be missing c7zip.dll. You can still work in the app, you cannot update Butler however.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End If
-
         If My.Settings.DarkTheme = "off" Then
 
         ElseIf My.Settings.DarkTheme = "on" Then
@@ -38,6 +8,22 @@
             Settings_Btn.BackColor = Color.DimGray
         Else
             'Do Nothing
+        End If
+
+        If My.Settings.RememVer = True Then
+            Version.Text = My.Settings.Ver
+        End If
+        If My.Settings.RememUser = True Then
+            Username.Text = My.Settings.User
+        End If
+        If My.Settings.RememURL = True Then
+            GameURL.Text = My.Settings.URL
+        End If
+        If My.Settings.RememOS = True Then
+            OS.Text = My.Settings.OS
+        End If
+        If My.Settings.RememFold = True Then
+            Folder.Text = My.Settings.Folder
         End If
     End Sub
 
@@ -76,7 +62,61 @@
         End If
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim osselect As String
+        Dim usernametext As String
+        Dim GameURLText As String
+        Dim foldertext As String
+        Dim versiontext As String
 
+        Try
+            osselect = OS.Text
+            usernametext = Username.Text
+            GameURLText = GameURL.Text
+            foldertext = Folder.Text
+            versiontext = Version.Text
+
+            If My.Settings.RememFold = True Then
+                My.Settings.Folder = foldertext
+            End If
+            If My.Settings.RememOS = True Then
+                My.Settings.OS = osselect
+            End If
+            If My.Settings.RememURL = True Then
+                My.Settings.URL = GameURLText
+            End If
+            If My.Settings.RememUser = True Then
+                My.Settings.User = usernametext
+            End If
+            If My.Settings.RememVer = True Then
+                My.Settings.Ver = versiontext
+            End If
+            My.Settings.Save()
+
+
+            Dim SourcePathUpdateButler As String = "butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
+            Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
+            If System.IO.File.Exists(SourcePathUpdateButler) Then
+                Dim pHelp As New ProcessStartInfo
+                pHelp.FileName = "butler.exe"
+                pHelp.Arguments = "push """ + foldertext + """ " + usernametext + "/" + GameURLText + ":" + osselect + " --userversion " + versiontext
+                pHelp.UseShellExecute = True
+                pHelp.WindowStyle = ProcessWindowStyle.Hidden
+                Dim proc As Process = Process.Start(pHelp)
+            Else
+                MessageBox.Show("Failed to update your game. 'butler.exe' is missing.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Something went wrong. \nPlease try again later.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+
+
+
+
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        FolderBrowserDialog1.ShowDialog()
+        Folder.Text = FolderBrowserDialog1.SelectedPath()
     End Sub
 End Class

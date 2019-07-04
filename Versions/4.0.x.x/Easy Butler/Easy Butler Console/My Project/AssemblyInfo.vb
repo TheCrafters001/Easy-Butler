@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Easy Butler")>
+<Assembly: AssemblyTitle("Easy Butler Console")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Easy Butler")>
+<Assembly: AssemblyProduct("Easy Butler Console Version")>
 <Assembly: AssemblyCopyright("Copyright © TheCrafters001 2019")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("6bb1b93a-2000-42b2-9eb9-bf6fbe4fedf4")>
+<Assembly: Guid("ebb30a98-a6d8-4eb2-b7b2-ddac05dbde1b")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("4.0.0.1")>
-<Assembly: AssemblyFileVersion("4.0.0.1")>
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

@@ -26,19 +26,20 @@ Partial Class Form1
         Me.Settings_Btn = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Username = New System.Windows.Forms.Label()
+        Me.GameURL = New System.Windows.Forms.Label()
+        Me.Folder = New System.Windows.Forms.Label()
+        Me.OS = New System.Windows.Forms.Label()
+        Me.Version = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.SuspendLayout()
         '
         'Settings_Btn
@@ -70,103 +71,87 @@ Partial Class Form1
         Me.Button2.Text = "Update Butler"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label1
+        'Username
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 70)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Label1"
+        Me.Username.AutoSize = True
+        Me.Username.Location = New System.Drawing.Point(12, 70)
+        Me.Username.Name = "Username"
+        Me.Username.Size = New System.Drawing.Size(55, 13)
+        Me.Username.TabIndex = 3
+        Me.Username.Text = "Username"
         '
-        'Label2
+        'GameURL
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 96)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(39, 13)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Label2"
+        Me.GameURL.AutoSize = True
+        Me.GameURL.Location = New System.Drawing.Point(12, 96)
+        Me.GameURL.Name = "GameURL"
+        Me.GameURL.Size = New System.Drawing.Size(60, 13)
+        Me.GameURL.TabIndex = 4
+        Me.GameURL.Text = "Game URL"
         '
-        'Label3
+        'Folder
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 122)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Label3"
+        Me.Folder.AutoSize = True
+        Me.Folder.Location = New System.Drawing.Point(12, 122)
+        Me.Folder.Name = "Folder"
+        Me.Folder.Size = New System.Drawing.Size(36, 13)
+        Me.Folder.TabIndex = 5
+        Me.Folder.Text = "Folder"
         '
-        'Label4
+        'OS
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 148)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 6
-        Me.Label4.Text = "Label4"
+        Me.OS.AutoSize = True
+        Me.OS.Location = New System.Drawing.Point(12, 148)
+        Me.OS.Name = "OS"
+        Me.OS.Size = New System.Drawing.Size(22, 13)
+        Me.OS.TabIndex = 6
+        Me.OS.Text = "OS"
         '
-        'Label5
+        'Version
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 174)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 13)
-        Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Label5"
+        Me.Version.AutoSize = True
+        Me.Version.Location = New System.Drawing.Point(12, 174)
+        Me.Version.Name = "Version"
+        Me.Version.Size = New System.Drawing.Size(42, 13)
+        Me.Version.TabIndex = 7
+        Me.Version.Text = "Version"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(55, 67)
+        Me.TextBox1.Location = New System.Drawing.Point(73, 67)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(434, 20)
         Me.TextBox1.TabIndex = 8
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(55, 93)
+        Me.TextBox2.Location = New System.Drawing.Point(78, 93)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(429, 20)
         Me.TextBox2.TabIndex = 9
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(55, 119)
+        Me.TextBox3.Location = New System.Drawing.Point(54, 119)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(420, 20)
         Me.TextBox3.TabIndex = 10
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(55, 145)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 11
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(55, 171)
+        Me.TextBox5.Location = New System.Drawing.Point(60, 171)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(447, 20)
         Me.TextBox5.TabIndex = 12
         '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(12, 197)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(495, 23)
+        Me.Button3.Size = New System.Drawing.Size(495, 52)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "Update Game"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(12, 226)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(495, 23)
-        Me.Button4.TabIndex = 14
-        Me.Button4.Text = "Reset"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -178,6 +163,30 @@ Partial Class Form1
         Me.Button5.Text = "Cancel && Close"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"windows", "linux", "mac", "android"})
+        Me.ComboBox1.Location = New System.Drawing.Point(40, 145)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(467, 21)
+        Me.ComboBox1.TabIndex = 16
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(480, 117)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(27, 23)
+        Me.Button4.TabIndex = 17
+        Me.Button4.Text = "..."
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'FolderBrowserDialog1
+        '
+        Me.FolderBrowserDialog1.Description = "Select the folder your game is located."
+        Me.FolderBrowserDialog1.ShowNewFolderButton = False
+        '
         'Form1
         '
         Me.AcceptButton = Me.Button3
@@ -185,19 +194,19 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Button5
         Me.ClientSize = New System.Drawing.Size(519, 376)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Version)
+        Me.Controls.Add(Me.OS)
+        Me.Controls.Add(Me.Folder)
+        Me.Controls.Add(Me.GameURL)
+        Me.Controls.Add(Me.Username)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Settings_Btn)
@@ -207,7 +216,7 @@ Partial Class Form1
         Me.MinimumSize = New System.Drawing.Size(535, 414)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Easy Butler"
+        Me.Text = "Easy Butler - By TheCrafters001"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -216,17 +225,18 @@ Partial Class Form1
     Friend WithEvents Settings_Btn As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents Username As Label
+    Friend WithEvents GameURL As Label
+    Friend WithEvents Folder As Label
+    Friend WithEvents OS As Label
+    Friend WithEvents Version As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
 End Class
