@@ -30,8 +30,8 @@ Partial Class About
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,7 +87,7 @@ Partial Class About
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(81, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Version: 4.0.0.2"
+        Me.Label2.Text = "Version: 4.0.0.7"
         '
         'Label1
         '
@@ -108,15 +108,6 @@ Partial Class About
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Description"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(442, 329)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Close"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'RichTextBox1
         '
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -126,6 +117,15 @@ Partial Class About
         Me.RichTextBox1.Size = New System.Drawing.Size(499, 193)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(442, 329)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Close"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'About
         '
