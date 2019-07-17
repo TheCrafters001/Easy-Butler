@@ -11,19 +11,19 @@
         End If
 
         If My.Settings.RememVer = True Then
-            Version.Text = My.Settings.Ver
+            Version_Label.Text = My.Settings.Ver
         End If
         If My.Settings.RememUser = True Then
-            Username.Text = My.Settings.User
+            Username_Label.Text = My.Settings.User
         End If
         If My.Settings.RememURL = True Then
-            GameURL.Text = My.Settings.URL
+            GameURL_Label.Text = My.Settings.URL
         End If
         If My.Settings.RememOS = True Then
-            OS.Text = My.Settings.OS
+            OS_Label.Text = My.Settings.OS
         End If
         If My.Settings.RememFold = True Then
-            Folder.Text = My.Settings.Folder
+            Folder_Label.Text = My.Settings.Folder
         End If
     End Sub
 
@@ -63,52 +63,37 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim osselect As String
-        Dim usernametext As String
-        Dim GameURLText As String
-        Dim foldertext As String
-        Dim versiontext As String
 
-        Try
-            osselect = OS.Text
-            usernametext = Username.Text
-            GameURLText = GameURL.Text
-            foldertext = Folder.Text
-            versiontext = Version.Text
-
-            If My.Settings.RememFold = True Then
-                My.Settings.Folder = foldertext
-            End If
-            If My.Settings.RememOS = True Then
-                My.Settings.OS = osselect
-            End If
-            If My.Settings.RememURL = True Then
-                My.Settings.URL = GameURLText
-            End If
-            If My.Settings.RememUser = True Then
-                My.Settings.User = usernametext
-            End If
-            If My.Settings.RememVer = True Then
-                My.Settings.Ver = versiontext
-            End If
-            My.Settings.Save()
+        If My.Settings.RememFold = True Then
+            My.Settings.Folder = Folder.Text
+        End If
+        If My.Settings.RememOS = True Then
+            My.Settings.OS = OS.Text
+        End If
+        If My.Settings.RememURL = True Then
+            My.Settings.URL = GameURL.Text
+        End If
+        If My.Settings.RememUser = True Then
+            My.Settings.User = Username.Text
+        End If
+        If My.Settings.RememVer = True Then
+            My.Settings.Ver = Version.Text
+        End If
+        My.Settings.Save()
 
 
-            Dim SourcePathUpdateButler As String = "butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
-            Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
-            If System.IO.File.Exists(SourcePathUpdateButler) Then
-                Dim pHelp As New ProcessStartInfo
-                pHelp.FileName = "butler.exe"
-                pHelp.Arguments = "push """ + foldertext + """ " + usernametext + "/" + GameURLText + ":" + osselect + " --userversion " + versiontext
-                pHelp.UseShellExecute = True
-                pHelp.WindowStyle = ProcessWindowStyle.Hidden
-                Dim proc As Process = Process.Start(pHelp)
-            Else
-                MessageBox.Show("Failed to update your game. 'butler.exe' is missing.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Catch ex As Exception
-            MessageBox.Show("Something went wrong. \nPlease try again later.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
+        Dim SourcePathUpdateButler As String = "butler.exe" 'This is just an example string and could be anything, it maps to fileToCopy in your code.
+        Dim FilenameUpdate As String = System.IO.Path.GetFileName(SourcePathUpdateButler) 'get the filename of the original file without the directory on it
+        If System.IO.File.Exists(SourcePathUpdateButler) Then
+            Dim pHelp As New ProcessStartInfo
+            pHelp.FileName = "butler.exe"
+            pHelp.Arguments = "push """ + Folder.Text + """ " + Username.Text + "/" + GameURL.Text + ":" + OS.Text + " --userversion " + Version.Text
+            pHelp.UseShellExecute = True
+            pHelp.WindowStyle = ProcessWindowStyle.Normal
+            Dim proc As Process = Process.Start(pHelp)
+        Else
+            MessageBox.Show("Failed to update your game. 'butler.exe' is missing.", "Error: File Missing", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
 
 
 
