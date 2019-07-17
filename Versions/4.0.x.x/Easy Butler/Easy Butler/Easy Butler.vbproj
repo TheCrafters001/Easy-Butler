@@ -76,6 +76,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -105,8 +111,17 @@
     <Compile Include="Settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -212,6 +230,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wizardimagesmall_2mG_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardimageSmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardimageSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MSI.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WizardSmallImage.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EasyButlerStartup.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

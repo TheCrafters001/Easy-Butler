@@ -47,7 +47,7 @@ Partial Class Form1
         Me.Settings_Btn.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Settings_Btn.Location = New System.Drawing.Point(12, 255)
         Me.Settings_Btn.Name = "Settings_Btn"
-        Me.Settings_Btn.Size = New System.Drawing.Size(495, 23)
+        Me.Settings_Btn.Size = New System.Drawing.Size(505, 23)
         Me.Settings_Btn.TabIndex = 0
         Me.Settings_Btn.Text = "Settings"
         Me.Settings_Btn.UseVisualStyleBackColor = True
@@ -57,7 +57,7 @@ Partial Class Form1
         Me.Button1.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button1.Location = New System.Drawing.Point(12, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(495, 23)
+        Me.Button1.Size = New System.Drawing.Size(505, 23)
         Me.Button1.TabIndex = 1
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = True
@@ -66,7 +66,7 @@ Partial Class Form1
         '
         Me.Button2.Location = New System.Drawing.Point(12, 41)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(495, 23)
+        Me.Button2.Size = New System.Drawing.Size(505, 23)
         Me.Button2.TabIndex = 2
         Me.Button2.Text = "Update Butler"
         Me.Button2.UseVisualStyleBackColor = True
@@ -120,35 +120,35 @@ Partial Class Form1
         '
         Me.TextBox1.Location = New System.Drawing.Point(73, 67)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(434, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(444, 20)
         Me.TextBox1.TabIndex = 8
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(78, 93)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(429, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(439, 20)
         Me.TextBox2.TabIndex = 9
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(54, 119)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(420, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(430, 20)
         Me.TextBox3.TabIndex = 10
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(60, 171)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(447, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(457, 20)
         Me.TextBox5.TabIndex = 12
         '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(12, 197)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(495, 52)
+        Me.Button3.Size = New System.Drawing.Size(505, 52)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "Update Game"
         Me.Button3.UseVisualStyleBackColor = True
@@ -158,7 +158,7 @@ Partial Class Form1
         Me.Button5.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.Button5.Location = New System.Drawing.Point(12, 284)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(495, 80)
+        Me.Button5.Size = New System.Drawing.Size(505, 68)
         Me.Button5.TabIndex = 15
         Me.Button5.Text = "Cancel && Close"
         Me.Button5.UseVisualStyleBackColor = True
@@ -170,12 +170,12 @@ Partial Class Form1
         Me.ComboBox1.Items.AddRange(New Object() {"windows", "linux", "mac", "android"})
         Me.ComboBox1.Location = New System.Drawing.Point(40, 145)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(467, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(477, 21)
         Me.ComboBox1.TabIndex = 16
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(480, 117)
+        Me.Button4.Location = New System.Drawing.Point(490, 117)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(27, 23)
         Me.Button4.TabIndex = 17
@@ -193,7 +193,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Button5
-        Me.ClientSize = New System.Drawing.Size(519, 376)
+        Me.ClientSize = New System.Drawing.Size(529, 364)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button5)
@@ -213,7 +213,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(535, 414)
+        Me.MinimumSize = New System.Drawing.Size(535, 389)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Easy Butler - By TheCrafters001"

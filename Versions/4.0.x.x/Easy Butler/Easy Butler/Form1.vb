@@ -119,4 +119,8 @@
         FolderBrowserDialog1.ShowDialog()
         Folder.Text = FolderBrowserDialog1.SelectedPath()
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Application.Exit()
+    End Sub
 End Class
