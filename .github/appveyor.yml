@@ -1,5 +1,5 @@
 version: 4.0.0.{build}
 clone_folder: C:\Project\Itch\IO\TheCrafters001\Easy-Butler
 build:
-  project: /Versions/4.0.x.x/Easy Butler/Easy Butler.sln
+  project: /Versions/4.1.x.x/Easy Butler/Easy Butler.sln
   verbosity: minimal
